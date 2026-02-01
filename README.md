@@ -45,9 +45,9 @@ By default, the app displays the name `JILLIAN`. You can change it in `main.js`:
    ```js
    let partnerName = "JILLIAN"; // Replace with your partner's name
    ```
-3. Change `JILLIAN` to your partner’s name, like this:
+3. Change `Alma` to your partner’s name, like this:
    ```js
-   let partnerName = "ALEX";
+   let partnerName = "Ali";
    ```
 4. Save the file and refresh the page to see the update.
 
