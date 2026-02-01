@@ -11,8 +11,25 @@ document.addEventListener("DOMContentLoaded", function () {
     const questionText = document.querySelector(".question-box h1");
     const yesButton = document.querySelector(".choice-box button:first-child");
     const noButton = document.querySelector(".choice-box button:last-child");
+    const noBtn = document.getElementById("no");
 
-    let partnerName = "JILLIAN"; // Replace with dynamic value
+noBtn.addEventListener("mouseover", () => {
+  const btnWidth = noBtn.offsetWidth;
+  const btnHeight = noBtn.offsetHeight;
+
+  const maxX = window.innerWidth - btnWidth;
+  const maxY = window.innerHeight - btnHeight;
+
+  const randomX = Math.floor(Math.random() * maxX);
+  const randomY = Math.floor(Math.random() * maxY);
+
+  noBtn.style.position = "absolute";
+  noBtn.style.left = randomX + "px";
+  noBtn.style.top = randomY + "px";
+});
+    
+
+    let partnerName = "AlMA"; // Replace with dynamic value
     let noClickCount = 0; // Counter for No button clicks
 
     // Function to create typewriter effect
